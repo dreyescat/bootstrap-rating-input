@@ -38,7 +38,7 @@
       // Add a clear link if clearable option is set
       if (clearable) {
         stars += [
-          ' <a class="rating-clear" style="display:none;" href="javascript:void"><i class="icon-remove"></i> ',
+          ' <a class="rating-clear" style="display:none;" href="javascript:void(0)"><i class="icon-remove"></i> ',
           clearable,
           '</a>'].join('');
       }
