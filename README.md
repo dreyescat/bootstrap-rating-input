@@ -6,6 +6,8 @@ It generates widgets like this:
 
 ![Rating example](http://curso-rails-mini-blog.s3.amazonaws.com/rating.png)
 
+See [bootstrap rating](http://dreyescat.github.io/bootstrap-rating-input) in action.
+
 ## But, why another damn rating plugin???
 
 After searching for existing widgets, I found three categories of them:

@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Bootstrap rating</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap core CSS -->
+    <link href="dist/css/bootstrap.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="dist/js/html5shiv.js"></script>
+      <script src="dist/js/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="survey-builder container">
+      <h2>Bootstrap rating</h2>
+      <hr/>
+      <h3>Default rating</h3>
+      <input type="number" class="rating" id="rating_id1"/>
+      <h3>Clearable rating</h3>
+      <input type="number" class="rating" id="rating_id2" data-clearable="remove"/>
+      <h3>Configurable rating</h3>
+      <input type="number" class="rating" id="rating_id333" data-min="0" data-max="10" data-clearable="remove"/>
+    </div>
+    <script type="text/javascript" src="dist/js/jquery-1.10.2.js"></script>
+    <script type="text/javascript" src="bootstrap-rating-input.js"></script>
+  </body>
+</html>
