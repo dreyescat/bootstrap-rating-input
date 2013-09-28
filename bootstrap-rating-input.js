@@ -54,6 +54,7 @@
         originalInput.val(),
         '" id="',
         originalInput.attr('id'),
+        originalInput.prop('disabled') ? '" disabled="disabled' : '',
         '" />',
         '</div>'].join('');
 
@@ -63,7 +64,8 @@
     }
 
     // Give live to the newly generated widgets
-    $('.rating-input')
+    // Only those that are not disabled
+    $('.rating-input:not(:has(>input:disabled))')
       // Highlight stars on hovering
       .on('mouseenter', 'i', function () {
         var self = $(this);
@@ -89,9 +91,10 @@
       // Remove value on clear
       .on('click', '.rating-clear', function () {
         _clearValue($(this).parent());
-      })
+      });
+
       // Initialize view with default value
-      .each(function () {
+      $('.rating-input').each(function () {
         var val = $(this).find('input').val();
         if (val) {
           _paintValue(this, val);
